@@ -1,3 +1,16 @@
+num = input('Enter a number: ')
+if num == num[::-1]:
+    print(num," is pallindrome")
+else:  
+    print(num,' is not palindrome')
+
+str_val = str(num)
+for i in range(10):
+    if str_val.count(str(i)) > 0:
+        print(str(i), "appears", str_val.count(str(i)), "times")
+
+
+
 num = int(input("Enter a number: "))
 temp1 = num
 reverse = 0
