@@ -1,0 +1,16 @@
+mark1 = int(input("Enter the marks in the first test:"))
+mark2 = int(input("Enter the marks in second test: "))
+mark3 = int(input("Enter the marks in third test: "))
+
+if (mark1 > mark2):
+    if (mark2 > mark3):
+        total_marks = mark1 + mark2
+    else:
+        total_marks = mark1 + mark3
+elif (mark1 > mark3):
+    total_marks = mark1 + mark2
+else:
+     total_marks = mark2 + mark3
+
+Average_marks = total_marks / 2
+print("The average of the best two test marks is:", Average_marks)
