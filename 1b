@@ -1,0 +1,23 @@
+num = int(input("Enter a number: "))
+temp1 = num
+reverse = 0
+while temp1 > 0:
+    remainder = temp1 % 10
+    reverse = (reverse * 10) + remainder
+    temp1 = temp1 // 10
+if num == reverse:
+    print('The Entered Number %d is Palindrome'%(num))
+else:
+    print("The Entered Number %d is Not a Palindrome"%(num))
+
+print("Digit\tFrequency")
+for i in range(0,10):
+    count=0
+    temp2=num
+while temp2>0:
+    digit=temp2%10
+    if digit==i:
+        count=count+1
+temp2=temp2//10
+if count>0:
+    print(i,"\t",count)
